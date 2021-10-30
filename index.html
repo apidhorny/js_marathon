@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Marathon</title>
+        <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <button class="scroll-btn" id="myBtn" title="Вгору">Up</button>
+
+        <!-- === HEADER === -->
+        <header class="main-screen screen">
+            <h1>JavaScript Marathon</h1>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a class="nav__link" href="#cards"><img src="/img/cards-img.png" alt="cards" /></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#drop"><img src="/img/drop-img.png" alt="drag and drop" /></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#color"><img src="/img/color-img.png" alt="cards" /></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#slider"><img src="/img/slider-img.png" alt="cards" /></a>
+                </li>
+            </ul>
+        </header>
+        <!-- === /HEADER === -->
+        <main>
+            <!-- === CARDS-SCREEN === -->
+            <section id="cards" class="card-screen">
+                <h2>Cards gallery</h2>
+                <div class="card-screen__container">
+                    <div class="slide-1 slide">
+                        <h3>Forest One</h3>
+                    </div>
+                    <div class="slide-2 slide">
+                        <h3>Forest Two</h3>
+                    </div>
+                    <div class="slide-3 slide">
+                        <h3>Forest Three</h3>
+                    </div>
+                    <div class="slide-4 slide">
+                        <h3>Forest Four</h3>
+                    </div>
+                    <div class="slide-5 slide">
+                        <h3>Forest Five</h3>
+                    </div>
+                </div>
+            </section>
+            <!-- === /CARDS-SCREEN === -->
+
+            <!-- === DRAG-AND-DROP === -->
+            <section id="drop" class="drag-n-drop">
+                <h2>Drag and drop</h2>
+                <div class="drag-n-drop__container">
+                    <div>
+                        <div class="row">
+                            <div class="col-header start">Start</div>
+                            <div class="col-header progress">Worhing</div>
+                            <div class="col-header done">Done</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="placeholder">
+                                <div class="item" draggable="true">Tusk One</div>
+                            </div>
+                            <div class="placeholder"></div>
+                            <div class="placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- === /DRAG-AND-DROP === -->
+
+            <!-- === COLORFUL-BOARD === -->
+            <section id="color" class="colorful-board">
+                <h2>Colorful Board</h2>
+                <div class="colorful-board__container" id="board"></div>
+            </section>
+            <!-- === /COLORFUL-BOARD === -->
+            <!-- === SLIDER-SCREEN === -->
+            <section id="slider" class="slider-screen">
+                <h2>Full screen slider</h2>
+                <div class="slider-screen__container">
+                    <div class="sidebar">
+                        <div class="slide-img-1">
+                            <h3>Forest Four</h3>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="slide-img-2">
+                            <h3>Forest Three</h3>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="slide-img-3">
+                            <h3>Forest Two</h3>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="slide-img-4">
+                            <h3>Forest One</h3>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="main-slide">
+                        <div class="slide-photo-1"></div>
+                        <div class="slide-photo-2"></div>
+                        <div class="slide-photo-3"></div>
+                        <div class="slide-photo-4"></div>
+                    </div>
+                    <div class="controls">
+                        <button class="control-btn down-button">
+                            <i>&uarr;</i>
+                        </button>
+                        <button class="control-btn up-button">
+                            <i>&darr;</i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- === /SLIDER-SCREEN === -->
+        </main>
+
+        <script src="/js/script.js"></script>
+    </body>
+</html>
